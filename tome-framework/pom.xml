@@ -17,11 +17,13 @@
     <modules>
         <module>tome-coverage</module>
         <module>tome-exception</module>
-        <module>tome-catchlog-starter</module>
         <module>tome-dto</module>
         <module>tome-toolkit</module>
         <module>tome-ddd</module>
+        <module>tome-tdd</module>
         <module>tome-cache-starter</module>
+        <module>tome-catchlog-starter</module>
+        <module>tome-extension-starter</module>
     </modules>
 
     <dependencyManagement>

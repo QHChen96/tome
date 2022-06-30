@@ -18,10 +18,12 @@
         <module name="tome-member-facade" />
         <module name="tome-ddd" />
         <module name="tome-coverage" />
+        <module name="tome-extension-starter" />
         <module name="tome-member-app" />
         <module name="tome-exception" />
         <module name="tome-payment" />
         <module name="tome-member-infra" />
+        <module name="tome-tdd" />
       </profile>
     </annotationProcessing>
   </component>
@@ -35,6 +37,7 @@
       <module name="tome-dependencies" options="-parameters -parameters" />
       <module name="tome-dto" options="-parameters" />
       <module name="tome-exception" options="-parameters" />
+      <module name="tome-extension-starter" options="-parameters" />
       <module name="tome-framework" options="" />
       <module name="tome-marketing" options="-parameters" />
       <module name="tome-member" options="" />
@@ -45,6 +48,7 @@
       <module name="tome-merchant" options="-parameters" />
       <module name="tome-payment" options="-parameters" />
       <module name="tome-product" options="-parameters" />
+      <module name="tome-tdd" options="-parameters" />
       <module name="tome-toolkit" options="-parameters" />
       <module name="tome-trade" options="-parameters" />
     </option>
