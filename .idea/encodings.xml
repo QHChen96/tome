@@ -16,6 +16,9 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-ddd/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-dto/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-exception/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-extension-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-statemachine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-tdd/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-toolkit/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-marketing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/src/main/java" charset="UTF-8" />

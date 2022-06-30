@@ -12,6 +12,6 @@
     <artifactId>tome-ddd</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}:${project.version}</name>
-    <description>${project.artifactId}</description>
+    <description>tome领域驱动</description>
 
 </project>
