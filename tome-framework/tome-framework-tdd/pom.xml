@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tome-tdd</artifactId>
+    <artifactId>tome-framework-tdd</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>tome测试驱动</description>

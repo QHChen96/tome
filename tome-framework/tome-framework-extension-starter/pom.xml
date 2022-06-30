@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tome-extension-starter</artifactId>
+    <artifactId>tome-framework-extension-starter</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>扩展点</description>
@@ -48,7 +48,7 @@
 
         <dependency>
             <groupId>com.khetao.tome</groupId>
-            <artifactId>tome-dto</artifactId>
+            <artifactId>tome-framework-dto</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
