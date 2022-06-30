@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-build/2.3.5.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-cache-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-cache-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-catchlog-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-coverage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-ddd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-ddd/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-dto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-exception/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-toolkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/tome-member-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/tome-member-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/tome-member-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-member/tome-member-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-trade/src/main/java" charset="UTF-8" />
+  </component>
+</project>
