@@ -6,9 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ResponseHandler {
-
     private static final Logger logger = LoggerFactory.getLogger(ResponseHandler.class);
-
     public static Object handle(Class returnType, String errCode, String errMsg){
         if (isResponse(returnType)){
             return handleResponse(returnType, errCode, errMsg);

@@ -32,6 +32,8 @@
         <module>tome-payment</module>
         <module>tome-merchant</module>
         <module>tome-product</module>
+        <module>tome-framework/tome-framework-security</module>
+        <module>tome-gateway</module>
     </modules>
 
     <properties>
@@ -48,6 +50,7 @@
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
         <gmavenplus-plugin.version>1.6</gmavenplus-plugin.version>
         <jacoco.version>0.8.3</jacoco.version>
+        <javax-inject.version>1</javax-inject.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +73,11 @@
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${javax-inject.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

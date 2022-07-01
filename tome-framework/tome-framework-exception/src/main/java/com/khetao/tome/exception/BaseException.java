@@ -1,9 +1,7 @@
 package com.khetao.tome.exception;
 
 public abstract class BaseException extends RuntimeException {
-
     private static final long serialVersionUID = 1L;
-
     private String errCode;
 
     public BaseException(String errMessage) {

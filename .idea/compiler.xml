@@ -23,11 +23,16 @@
         <module name="tome-member-infra" />
         <module name="tome-framework-coverage" />
         <module name="tome-framework-catchlog-starter" />
+        <module name="tome-framework-security-password" />
+        <module name="tome-gateway" />
         <module name="tome-framework-metrics-starter" />
         <module name="tome-framework-cache-starter" />
         <module name="tome-framework-dto" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tome-framework-metrics" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -41,9 +46,13 @@
       <module name="tome-framework-dto" options="-parameters" />
       <module name="tome-framework-exception" options="-parameters" />
       <module name="tome-framework-extension-starter" options="-parameters" />
+      <module name="tome-framework-metrics" options="-parameters" />
       <module name="tome-framework-metrics-starter" options="-parameters" />
+      <module name="tome-framework-security" options="-parameters" />
+      <module name="tome-framework-security-password" options="-parameters" />
       <module name="tome-framework-tdd" options="-parameters" />
       <module name="tome-framework-toolkit" options="-parameters" />
+      <module name="tome-gateway" options="-parameters" />
       <module name="tome-marketing" options="-parameters" />
       <module name="tome-member" options="" />
       <module name="tome-member-app" options="-parameters" />

@@ -19,9 +19,14 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-extension-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-extension-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-metrics-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/tome-framework-security-password/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/tome-framework-security-password/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-tdd/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-tdd/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-toolkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-marketing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/src/main/resources" charset="UTF-8" />
