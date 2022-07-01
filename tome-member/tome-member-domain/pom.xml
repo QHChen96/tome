@@ -13,5 +13,18 @@
     <name>${project.artifactId}:${project.version}</name>
     <description>tome会员服务领域层</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.khetao.tome</groupId>
+            <artifactId>tome-framework-ddd</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

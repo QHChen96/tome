@@ -32,12 +32,14 @@
         <module>tome-payment</module>
         <module>tome-merchant</module>
         <module>tome-product</module>
+        <module>tome-gateway</module>
     </modules>
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
         <fastjson.version>2.0.8</fastjson.version>
+
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
@@ -47,6 +49,7 @@
         <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
         <gmavenplus-plugin.version>1.6</gmavenplus-plugin.version>
         <jacoco.version>0.8.3</jacoco.version>
+        <javax-inject.version>1</javax-inject.version>
     </properties>
 
     <dependencyManagement>
@@ -69,6 +72,11 @@
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${javax-inject.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

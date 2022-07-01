@@ -13,4 +13,13 @@
     <name>${project.artifactId}:${project.version}</name>
     <description>tome会员服务应用层</description>
 
+    <build>
+        <finalName>tome-member-app</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

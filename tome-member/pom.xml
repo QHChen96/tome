@@ -20,6 +20,7 @@
         <module>tome-member-infra</module>
         <module>tome-member-domain</module>
         <module>tome-member-facade</module>
+        <module>tome-member-exporter</module>
     </modules>
 
 

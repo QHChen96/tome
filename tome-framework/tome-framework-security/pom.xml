@@ -9,11 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tome-dto</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>tome-framework-security</artifactId>
+    <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
-    <description>${project.artifactId}</description>
-
+    <description>tome安全框架</description>
+    <modules>
+        <module>tome-framework-security-password</module>
+    </modules>
 
 
 </project>

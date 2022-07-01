@@ -15,16 +15,17 @@
     <description>${project.artifactId}</description>
 
     <modules>
-        <module>tome-coverage</module>
-        <module>tome-exception</module>
-        <module>tome-dto</module>
-        <module>tome-ddd</module>
-        <module>tome-tdd</module>
-        <module>tome-toolkit</module>
-        <module>tome-statemachine</module>
-        <module>tome-catchlog-starter</module>
-        <module>tome-cache-starter</module>
-        <module>tome-extension-starter</module>
+        <module>tome-framework-coverage</module>
+        <module>tome-framework-exception</module>
+        <module>tome-framework-dto</module>
+        <module>tome-framework-toolkit</module>
+        <module>tome-framework-ddd</module>
+        <module>tome-framework-tdd</module>
+        <module>tome-framework-security</module>
+        <module>tome-framework-cache-starter</module>
+        <module>tome-framework-catchlog-starter</module>
+        <module>tome-framework-extension-starter</module>
+        <module>tome-framework-metrics-starter</module>
     </modules>
 
     <dependencyManagement>

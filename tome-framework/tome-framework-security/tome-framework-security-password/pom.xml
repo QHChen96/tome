@@ -3,16 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>tome-framework</artifactId>
+        <artifactId>tome-framework-security</artifactId>
         <groupId>com.khetao.tome</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tome-statemachine</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>tome-framework-security-password</artifactId>
     <name>${project.artifactId}:${project.version}</name>
-    <description>状态机</description>
+    <description>tome安全框架密码模式</description>
 
 
 </project>
