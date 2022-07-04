@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tome-member
+  namespace: tome
+  labels:
+    app: member
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: member
+  template:
+    metadata:
+      labels:
+        app: member
+    spec:
+      serviceAccountName: tome-admin
+      containers:
+        - name: member
+          image: tome/tome-member
+          ports:
+            - name: http-server
+              containerPort: 80
+          env:
+            - name: PORT
+              value: "80"
+            - name: JAVA_TOOL_OPTIONS
+              value: -agentlib:jdwp=transport=dt_socket,server=y,address=5005,suspend=n,quiet=y

@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: tome
+resources:
+  - tome-namespace.yml
+  - tome-serviceaccount.yml
+  - tome-role.yml
+  - tome-rolebinding.yml
+  - member-configmap.yml
+  - member-deployment.yml
+  - member-service.yml

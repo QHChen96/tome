@@ -9,20 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tome-member-facade</artifactId>
+    <artifactId>tome-member-exporter</artifactId>
     <name>${project.artifactId}:${project.version}</name>
-    <description>tome会员服务基础设施</description>
+    <description>tome会员服务数据报告</description>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.khetao.tome</groupId>
-            <artifactId>tome-framework-dto</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-openfeign-core</artifactId>
-        </dependency>
-
-    </dependencies>
 </project>

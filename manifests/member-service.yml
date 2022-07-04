@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: member
+  namespace: tome
+  labels:
+    app: member
+spec:
+  type: ClusterIP
+  selector:
+    app: member
+  ports:
+    - port: 80
+      targetPort: http-server

@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <artifactId>tome</artifactId>
+        <groupId>com.khetao.tome</groupId>
+        <version>${revision}</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>tome-dependencies</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
-    <description>tome依赖</description>
+    <description>tome依赖,提供给第三应用使用</description>
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
@@ -23,13 +22,13 @@
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>com.khetao.tome</groupId>
+                <artifactId>tome-member-facade</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
 </project>

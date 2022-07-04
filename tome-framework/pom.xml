@@ -26,6 +26,12 @@
         <module>tome-framework-catchlog-starter</module>
         <module>tome-framework-extension-starter</module>
         <module>tome-framework-metrics-starter</module>
+        <module>tome-framework-web-starter</module>
+        <module>tome-framework-openfeign</module>
+        <module>tome-framework-environment</module>
+        <module>tome-framework-threadpool</module>
+        <module>tome-framework-eventbus</module>
+
     </modules>
 
     <dependencyManagement>

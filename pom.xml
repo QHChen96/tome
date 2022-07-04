@@ -37,9 +37,11 @@
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-boot.version>2.7.1</spring-boot.version>
         <fastjson.version>2.0.8</fastjson.version>
-
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
@@ -50,6 +52,10 @@
         <gmavenplus-plugin.version>1.6</gmavenplus-plugin.version>
         <jacoco.version>0.8.3</jacoco.version>
         <javax-inject.version>1</javax-inject.version>
+        <javax-servlet.version>2.5</javax-servlet.version>
+        <mapstruct.version>1.5.1.Final</mapstruct.version>
+        <feign-jaxrs2.version>11.8</feign-jaxrs2.version>
+        <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
     </properties>
 
     <dependencyManagement>
@@ -78,6 +84,33 @@
                 <artifactId>javax.inject</artifactId>
                 <version>${javax-inject.version}</version>
             </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${javax-servlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-jaxrs2</artifactId>
+                <version>${feign-jaxrs2.version}</version>
+
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>${feign-jaxrs2.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -98,9 +131,17 @@
                 <version>${maven-compiler-plugin.version}</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                     <parameters>true</parameters>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>

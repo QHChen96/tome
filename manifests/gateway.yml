@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway
+  namespace: tome
+data:
+  application.yaml: |-
+    server:
+      port: ${PORT:8080}
+    logging:
+      level:
+        root: INFO
