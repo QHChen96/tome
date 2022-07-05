@@ -31,6 +31,7 @@
         <module>tome-framework-environment</module>
         <module>tome-framework-threadpool</module>
         <module>tome-framework-eventbus</module>
+        <module>tome-framework-tracing</module>
 
     </modules>
 
