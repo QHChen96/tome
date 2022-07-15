@@ -11,10 +11,13 @@
 
     <artifactId>tome-trade</artifactId>
     <name>${project.artifactId}:${project.version}</name>
+    <packaging>pom</packaging>
     <description>tome交易服务</description>
 
-    <dependencies>
-
-    </dependencies>
-
+    <modules>
+        <module>tome-trade-app</module>
+        <module>tome-trade-domain</module>
+        <module>tome-trade-facade</module>
+        <module>tome-trade-infra</module>
+    </modules>
 </project>

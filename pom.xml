@@ -33,13 +33,15 @@
         <module>tome-merchant</module>
         <module>tome-product</module>
         <module>tome-gateway</module>
+        <module>tome-java-agent</module>
     </modules>
 
     <properties>
         <revision>1.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.8.RELEASE</spring-cloud-alibaba.version>
         <spring-boot.version>2.7.1</spring-boot.version>
         <fastjson.version>2.0.8</fastjson.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
@@ -56,21 +58,24 @@
         <mapstruct.version>1.5.1.Final</mapstruct.version>
         <feign-jaxrs2.version>11.8</feign-jaxrs2.version>
         <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
+        <guava.version>31.0.1-jre</guava.version>
+        <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
+        <redisson-spring-boot-starter.version>3.17.3</redisson-spring-boot-starter.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-<!--            <dependency>-->
-<!--                <groupId>com.khetao.tome</groupId>-->
-<!--                <artifactId>tome-dependencies</artifactId>-->
-<!--                <version>${project.version}</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -99,17 +104,30 @@
                 <artifactId>mapstruct-jdk8</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-jaxrs2</artifactId>
                 <version>${feign-jaxrs2.version}</version>
-
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-httpclient</artifactId>
                 <version>${feign-jaxrs2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -121,6 +139,18 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${jacoco.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>

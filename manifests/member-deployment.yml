@@ -10,10 +10,12 @@ spec:
   selector:
     matchLabels:
       app: member
+      env: test
   template:
     metadata:
       labels:
         app: member
+        env: test
     spec:
       serviceAccountName: tome-admin
       containers:

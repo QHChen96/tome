@@ -1,0 +1,54 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: tome-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+        group: tome
+        enabled: true
+      username: nacos
+      password: nacos
+      server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8888
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: member-provider
+        uri: lb://member-provider
+        predicates:
+        - Path=/member/**
+        - Method=GET,POST
+      - id: trade-provider
+        uri: lb://trade-provider
+        predicates:
+        - Path=/trade/**
+        - Method=GET,POST
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+    org.springframework.cloud.loadbalancer: trace
+

@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tome-trade/tome-trade-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tome-trade/tome-trade-domain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tome-trade/tome-trade-facade" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tome-trade/tome-trade-infra" vcs="Git" />
   </component>
 </project>

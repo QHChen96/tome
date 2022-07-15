@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.khetao.tome</groupId>
     <artifactId>tome-member-facade</artifactId>
     <name>${project.artifactId}:${project.version}</name>
     <description>tome会员服务基础设施</description>
@@ -22,6 +23,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-openfeign-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
         </dependency>
 
     </dependencies>
