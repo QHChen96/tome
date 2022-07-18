@@ -9,7 +9,7 @@ import java.util.List;
  * 分页结果
  * @param <T>
  */
-public class PageResponse<T> extends Response {
+public class PageResponse<T> extends CodeMessageResponse {
     private static final long serialVersionUID = 1L;
 
     private int totalCount = 0;
@@ -19,6 +19,10 @@ public class PageResponse<T> extends Response {
     private int pageIndex = 1;
 
     private Collection<T> data;
+
+    public PageResponse() {
+        super();
+    }
 
     public int getTotalCount() {
         return totalCount;
@@ -85,20 +89,15 @@ public class PageResponse<T> extends Response {
         return !isEmpty();
     }
 
-    public static PageResponse buildSuccess() {
+
+
+    public static PageResponse success() {
         PageResponse response = new PageResponse();
         return response;
     }
 
-    public static PageResponse buildFailure(String errCode, String errMsg) {
-        PageResponse response = new PageResponse();
-        response.setErrCode(errCode);
-        response.setErrMsg(errMsg);
-        return response;
-    }
-
-    public static <T> PageResponse<T> of(int pageSize, int pageIndex) {
-        PageResponse<T> response = new PageResponse<>();
+    public static <T> PageResponse<T> success(int pageSize, int pageIndex) {
+        PageResponse<T> response = success();
         response.setData(Collections.emptyList());
         response.setTotalCount(0);
         response.setPageSize(pageSize);
@@ -106,12 +105,10 @@ public class PageResponse<T> extends Response {
         return response;
     }
 
-    public static <T> PageResponse<T> of(Collection<T> data, int totalCount, int pageSize, int pageIndex) {
-        PageResponse<T> response = new PageResponse<>();
+    public static <T> PageResponse<T> success(Collection<T> data, int totalCount, int pageSize, int pageIndex) {
+        PageResponse<T> response = success(pageSize, pageIndex);
         response.setData(data);
         response.setTotalCount(totalCount);
-        response.setPageSize(pageSize);
-        response.setPageIndex(pageIndex);
         return response;
     }
 }

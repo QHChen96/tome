@@ -11,7 +11,6 @@ spring:
           enabled: true
         file-extension: yaml
         group: tome
-        refresh-enabled: true
       discovery:
         service: ${spring.application.name}
         group: tome
@@ -26,7 +25,7 @@ spring:
         flow:
           nacos:
             server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
-            data-id: ${spring.application.name}
+            data-id: ${spring.application.name}-flow
             group-id: tome
             rule-type: flow
             data-type: json

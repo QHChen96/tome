@@ -10,7 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tome-product</artifactId>
+    <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>tome商品服务</description>
+    <modules>
+        <module>tome-product-app</module>
+        <module>tome-product-domain</module>
+        <module>tome-product-infra</module>
+        <module>tome-product-facade</module>
+    </modules>
 
 </project>

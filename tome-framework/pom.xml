@@ -32,7 +32,7 @@
         <module>tome-framework-threadpool</module>
         <module>tome-framework-eventbus</module>
         <module>tome-framework-tracing</module>
-
+        <module>tome-framework-javaagent</module>
     </modules>
 
     <dependencyManagement>

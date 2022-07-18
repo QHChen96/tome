@@ -33,7 +33,6 @@
         <module>tome-merchant</module>
         <module>tome-product</module>
         <module>tome-gateway</module>
-        <module>tome-java-agent</module>
     </modules>
 
     <properties>
@@ -61,6 +60,8 @@
         <guava.version>31.0.1-jre</guava.version>
         <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
         <redisson-spring-boot-starter.version>3.17.3</redisson-spring-boot-starter.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <shardingsphere.version>5.1.2</shardingsphere.version>
     </properties>
 
     <dependencyManagement>
@@ -128,6 +129,16 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+                <version>${shardingsphere.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

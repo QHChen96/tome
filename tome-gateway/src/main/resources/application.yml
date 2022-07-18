@@ -12,13 +12,12 @@ spring:
         enabled: false
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
         service: ${spring.application.name}
         group: tome
         enabled: true
-      username: nacos
-      password: nacos
-      server-addr: 127.0.0.1:8848
+      username: ${NACOS_USERNAME:nacos}
+      password: ${NACOS_PASSWORD:nacos}
+      server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
     sentinel:
       transport:
         port: 8719

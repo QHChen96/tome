@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/tome-trade/tome-trade-domain/pom.xml" />
         <option value="$PROJECT_DIR$/tome-trade/tome-trade-facade/pom.xml" />
         <option value="$PROJECT_DIR$/tome-trade/tome-trade-infra/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-product/tome-product-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-product/tome-product-facade/pom.xml" />
       </list>
     </option>
   </component>

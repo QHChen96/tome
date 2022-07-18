@@ -2,6 +2,7 @@ package com.khetao.tome.catchlog;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONWriter;
+import com.khetao.tome.dto.CodeMessageResponse;
 import com.khetao.tome.exception.BaseException;
 import com.khetao.tome.exception.BizException;
 import com.khetao.tome.exception.SysException;
@@ -44,27 +45,24 @@ public class CatchLogAspect {
     }
 
     private Object handleException(ProceedingJoinPoint joinPoint, Throwable e) {
-        MethodSignature ms = (MethodSignature) joinPoint.getSignature();
-        Class returnType = ms.getReturnType();
-
         if (e instanceof BizException){
             logger.warn("BIZ EXCEPTION : " + e.getMessage());
             //在Debug的时候，对于BizException也打印堆栈
             if(logger.isDebugEnabled()){
                 logger.error(e.getMessage(), e);
             }
-            return ResponseHandler.handle(returnType, (BaseException)e);
+            return CodeMessageResponse.failure(e);
         }
 
         if (e instanceof SysException){
             logger.error("SYS EXCEPTION :");
             logger.error(e.getMessage(), e);
-            return ResponseHandler.handle(returnType, (BaseException)e);
+            return CodeMessageResponse.failure(e);
         }
 
         logger.error("UNKNOWN EXCEPTION :");
         logger.error(e.getMessage(), e);
-        return ResponseHandler.handle(returnType, "UNKNOWN_ERROR", e.getMessage());
+        return CodeMessageResponse.failure("UNKNOWN_ERROR", e);
     }
 
 
