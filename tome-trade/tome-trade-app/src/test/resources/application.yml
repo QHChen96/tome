@@ -1,0 +1,30 @@
+server:
+  port: 18088
+
+spring:
+  application:
+    name: trade-provider
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+        enabled: true
+        group: tome
+      username: nacos
+      password: nacos
+      server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
