@@ -1,6 +1,7 @@
 package com.khetao.tome.member.domain.model;
 
 import com.khetao.tome.ddd.AggregateRoot;
+import lombok.Data;
 
 import java.time.LocalDate;
 
@@ -8,17 +9,18 @@ import java.time.LocalDate;
  * 会员
  * @author chenqinhao
  */
-public class Member extends AggregateRoot {
+@Data
+public class Member {
 
     /**
      * 会员id
      */
-    private Long id;
+    private Long memberId;
 
     /**
      * 会员名称
      */
-    private String name;
+    private String username;
 
     /**
      * 昵称
@@ -53,7 +55,7 @@ public class Member extends AggregateRoot {
     /**
      * 手机号码
      */
-    private String phone_number;
+    private String phoneNumber;
 
     /**
      * 邮箱

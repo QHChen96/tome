@@ -10,7 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tome-merchant</artifactId>
+    <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>tome商家服务</description>
 
+    <modules>
+        <module>tome-merchant-app</module>
+        <module>tome-merchant-infra</module>
+        <module>tome-merchant-domain</module>
+        <module>tome-merchant-facade</module>
+        <module>tome-merchant-exporter</module>
+    </modules>
 </project>

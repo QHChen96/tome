@@ -33,6 +33,7 @@
         <module>tome-framework-eventbus</module>
         <module>tome-framework-tracing</module>
         <module>tome-framework-javaagent</module>
+        <module>tome-framework-core</module>
     </modules>
 
     <dependencyManagement>

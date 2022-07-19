@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-exception/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-cache-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-catchlog-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-coverage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-ddd/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-dto/src/main/java" charset="UTF-8" />
@@ -43,6 +44,12 @@
     <file url="file://$PROJECT_DIR$/tome-member/tome-member-facade/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/tome-member-infra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-merchant/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-exporter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-infra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-payment/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/src/main/resources" charset="UTF-8" />

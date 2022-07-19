@@ -1,8 +1,8 @@
 server:
-  port: 18080
+  port: 18060
 spring:
   application:
-    name: member-provider
+    name: marchant-provider
   cloud:
     nacos:
       config:
@@ -11,6 +11,7 @@ spring:
           enabled: true
         file-extension: yaml
         group: tome
+        refresh-enabled: true
       discovery:
         service: ${spring.application.name}
         group: tome
@@ -25,7 +26,7 @@ spring:
         flow:
           nacos:
             server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
-            data-id: ${spring.application.name}-flow
+            data-id: ${spring.application.name}
             group-id: tome
             rule-type: flow
             data-type: json
