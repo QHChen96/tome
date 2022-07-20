@@ -10,9 +10,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tome-marketing</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>${project.artifactId}</description>
 
+    <modules>
+        <module>tome-marketing-app</module>
+        <module>tome-marketing-domain</module>
+        <module>tome-marketing-exporter</module>
+        <module>tome-marketing-facade</module>
+        <module>tome-marketing-infra</module>
+    </modules>
 
 </project>

@@ -13,4 +13,21 @@
     <name>${project.artifactId}:${project.version}</name>
     <description>tome-product-domain</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.khetao.tome</groupId>
+            <artifactId>tome-framework-dto</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.khetao.tome</groupId>
+            <artifactId>tome-framework-ddd</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

@@ -24,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-javaagent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-metrics-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-openfeign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-openfeign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-security/tome-framework-security-password/src/main/java" charset="UTF-8" />
@@ -36,6 +37,17 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-statemachine/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-marketing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-exporter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-exporter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-marketing/tome-marketing-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-member/tome-member-app/src/main/java" charset="UTF-8" />
@@ -51,6 +63,17 @@
     <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-facade/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-merchant/tome-merchant-infra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-exporter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-exporter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-payment/tome-payment-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/tome-product-app/src/main/java" charset="UTF-8" />
@@ -60,6 +83,18 @@
     <file url="file://$PROJECT_DIR$/tome-product/tome-product-facade/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/tome-product-infra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-product/tome-product-infra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-exporter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-exporter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-trade/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-trade/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-trade/tome-trade-app/src/main/java" charset="UTF-8" />

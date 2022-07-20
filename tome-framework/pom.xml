@@ -36,10 +36,4 @@
         <module>tome-framework-core</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-
-        </dependencies>
-
-    </dependencyManagement>
 </project>

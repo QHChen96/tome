@@ -10,7 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tome-payment</artifactId>
+    <packaging>pom</packaging>
     <name>${project.artifactId}:${project.version}</name>
     <description>tome支付服务</description>
 
+    <modules>
+        <module>tome-payment-app</module>
+        <module>tome-payment-infra</module>
+        <module>tome-payment-domain</module>
+        <module>tome-payment-facade</module>
+        <module>tome-payment-exporter</module>
+    </modules>
 </project>

@@ -1,0 +1,41 @@
+server:
+  port: 18060
+spring:
+  application:
+    name: marchant-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        discovery:
+          enabled: true
+        file-extension: yaml
+        group: tome
+        refresh-enabled: true
+      discovery:
+        service: ${spring.application.name}
+        group: tome
+        enabled: true
+      username: ${NACOS_USERNAME:nacos}
+      password: ${NACOS_PASSWORD:nacos}
+      server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+    sentinel:
+      transport:
+        dashboard: ${SENTINEL_HOST:127.0.0.1:8858}
+      datasource:
+        flow:
+          nacos:
+            server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+            data-id: ${spring.application.name}
+            group-id: tome
+            rule-type: flow
+            data-type: json
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

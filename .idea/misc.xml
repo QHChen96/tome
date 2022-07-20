@@ -13,6 +13,13 @@
         <option value="$PROJECT_DIR$/tome-trade/tome-trade-infra/pom.xml" />
         <option value="$PROJECT_DIR$/tome-product/tome-product-domain/pom.xml" />
         <option value="$PROJECT_DIR$/tome-product/tome-product-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-marketing/tome-marketing-infra/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-shoppingcart/tome-shoppingcart-infra/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-payment/tome-payment-app/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-payment/tome-payment-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-payment/tome-payment-exporter/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-payment/tome-payment-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/tome-payment/tome-payment-infra/pom.xml" />
       </list>
     </option>
   </component>

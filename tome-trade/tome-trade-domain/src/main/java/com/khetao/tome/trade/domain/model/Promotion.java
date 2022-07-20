@@ -9,4 +9,6 @@ import lombok.Data;
  */
 @Data
 public class Promotion {
+    private Long promotionId;
+    private String promotionName;
 }

@@ -7,5 +7,5 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @email qhchen96@gmail.com
  */
 @EnableDiscoveryClient
-public class MarchantApplicationConfig {
+public class MerchantApplicationConfig {
 }

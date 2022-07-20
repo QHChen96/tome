@@ -33,6 +33,7 @@
         <module>tome-merchant</module>
         <module>tome-product</module>
         <module>tome-gateway</module>
+        <module>tome-shoppingcart</module>
     </modules>
 
     <properties>
