@@ -1,5 +1,6 @@
 package com.khetao.tome.product.model;
 
+import com.khetao.tome.dto.Image;
 import lombok.Data;
 
 import java.util.List;
@@ -11,12 +12,36 @@ import java.util.List;
  */
 @Data
 public class Category {
+    /**
+     * 类目id
+     */
     private Long categoryId;
+    /**
+     * 类目名称
+     */
     private String categoryName;
-    private String imageUrl;
-    private String pid;
+    /**
+     * 类目图片地址
+     */
+    private Image imageUrl;
+    /**
+     * 父类目
+     */
+    private Category parent;
+    /**
+     * 分级
+     */
     private Integer level;
+    /**
+     * 排序
+     */
     private Integer sort;
+    /**
+     * 是否有子目录
+     */
     private Boolean hasChild;
+    /**
+     * 类目路径
+     */
     private List<String> paths;
 }

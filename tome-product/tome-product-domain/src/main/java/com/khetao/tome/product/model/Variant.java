@@ -1,5 +1,8 @@
 package com.khetao.tome.product.model;
 
+import com.khetao.tome.dto.Money;
+import com.khetao.tome.dto.Volume;
+import com.khetao.tome.dto.Weight;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -23,11 +26,19 @@ public class Variant {
     /**
      * 价格
      */
-    private BigDecimal price;
+    private Money price;
 
     private String sku;
-
+    /**
+     * 条形码
+     */
     private String barcode;
-
-
+    /**
+     * 重量
+     */
+    private Weight weight;
+    /**
+     * 体积
+     */
+    private Volume volume;
 }
