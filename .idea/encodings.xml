@@ -36,6 +36,14 @@
     <file url="file://$PROJECT_DIR$/tome-framework/tome-framework-web-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-framework/tome-statemachine/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tome-service-manager/tome-service-manager-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-service-marketing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-service-marketing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tome-service-marketing/tome-service-marketing-app/src/main/java" charset="UTF-8" />
