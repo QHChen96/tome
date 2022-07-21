@@ -57,17 +57,17 @@ web
 * 分布式事务该怎么处理
 ##### tome-gateway 网关
 作为外部流量的入口
-##### tome-marketing 营销服务
+##### tome-service-marketing 营销服务
 优惠券, 营销活动都会考虑放着这一层
-##### tome-member 会员服务
+##### tome-service-member 会员服务
 维护会员的各种信息
-##### tome-merchant 商家服务
+##### tome-service-merchant 商家服务
 视情况而定, 考虑做入驻型的商城
-##### tome-payment 支付服务
+##### tome-service-payment 支付服务
 聚合各类支付
-##### tome-product 商品服务
+##### tome-service-product 商品服务
 商品相关的功能
-##### tome-trade 交易服务
+##### tome-service-trade 交易服务
 订单相关的功能
 ##### 更多服务在规划中...
 

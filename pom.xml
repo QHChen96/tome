@@ -24,16 +24,16 @@
     </developers>
 
     <modules>
-        <module>tome-framework</module>
-        <module>tome-trade</module>
         <module>tome-dependencies</module>
-        <module>tome-marketing</module>
-        <module>tome-member</module>
-        <module>tome-payment</module>
-        <module>tome-merchant</module>
-        <module>tome-product</module>
+        <module>tome-framework</module>
         <module>tome-gateway</module>
-        <module>tome-shoppingcart</module>
+        <module>tome-service-trade</module>
+        <module>tome-service-marketing</module>
+        <module>tome-service-member</module>
+        <module>tome-service-payment</module>
+        <module>tome-service-merchant</module>
+        <module>tome-service-product</module>
+        <module>tome-service-shoppingcart</module>
     </modules>
 
     <properties>
