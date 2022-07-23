@@ -1,9 +1,10 @@
-package com.khetao.tome.dto;
+package com.khetao.tome.ddd.valobj;
 
 /**
- * 重量
+ * 体积
  * @author chenqinhao 2022/7/20
  * @email qhchen96@gmail.com
  */
-public class Weight {
+public class Volume {
+
 }

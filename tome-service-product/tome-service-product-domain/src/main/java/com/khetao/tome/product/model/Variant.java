@@ -1,11 +1,10 @@
 package com.khetao.tome.product.model;
 
-import com.khetao.tome.dto.Money;
-import com.khetao.tome.dto.Volume;
-import com.khetao.tome.dto.Weight;
+import com.khetao.tome.ddd.valobj.Money;
+import com.khetao.tome.ddd.valobj.Volume;
+import com.khetao.tome.ddd.valobj.Weight;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**

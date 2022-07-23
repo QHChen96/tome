@@ -1,4 +1,4 @@
-package com.khetao.tome.member.app.config;
+package com.khetao.tome.marketing.app.config;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 

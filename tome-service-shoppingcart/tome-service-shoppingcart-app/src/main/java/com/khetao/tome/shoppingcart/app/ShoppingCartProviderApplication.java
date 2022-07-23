@@ -1,4 +1,4 @@
-package com.khetao.tome.payment.app;
+package com.khetao.tome.shoppingcart.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan(basePackages = {
     "com.khetao.tome",
 })
-public class MarketingProviderApplication {
+public class ShoppingCartProviderApplication {
 
     @Bean
     @LoadBalanced
@@ -26,7 +26,7 @@ public class MarketingProviderApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(MarketingProviderApplication.class, args);
+        SpringApplication.run(ShoppingCartProviderApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.khetao.tome.payment.app.config;
+package com.khetao.tome.shoppingcart.app.config;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
@@ -7,5 +7,5 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @email qhchen96@gmail.com
  */
 @EnableDiscoveryClient
-public class MarketingApplicationConfig {
+public class ShoppingCartApplicationConfig {
 }

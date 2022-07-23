@@ -1,6 +1,6 @@
 package com.khetao.tome.product.valobj;
 
-import com.khetao.tome.dto.Money;
+import com.khetao.tome.ddd.valobj.Money;
 import lombok.Data;
 
 /**

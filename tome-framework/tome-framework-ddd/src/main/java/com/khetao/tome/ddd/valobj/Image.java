@@ -1,4 +1,4 @@
-package com.khetao.tome.dto;
+package com.khetao.tome.ddd.valobj;
 
 import lombok.Data;
 

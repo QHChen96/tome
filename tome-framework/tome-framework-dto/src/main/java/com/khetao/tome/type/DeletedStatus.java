@@ -6,4 +6,5 @@ package com.khetao.tome.type;
  * @email qhchen96@gmail.com
  */
 public enum DeletedStatus {
+
 }
