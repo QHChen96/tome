@@ -37,7 +37,8 @@ public class Discount extends EntitySnapshot<Discount> {
      * 保存改动
      */
     public void store() {
-        this.saveAndSnapshot((diff) -> discountRepo.storeDiscount(diff));
+        this.pollute();
+        this.save((diff) -> discountRepo.storeDiscount(diff));
     }
 
     /**
