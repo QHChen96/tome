@@ -48,27 +48,24 @@ public abstract class EntitySnapshot<T extends EntitySnapshot> implements IdEnti
      * @param saveFunc
      */
     public void saveAndSnapshot(Consumer<T> saveFunc) {
-        if (isChange()) {
-            if (snapshot != null) {
-                snapshot();
-            }
-            T diff = diff();
-            // 执行具体的修改方法
-            saveFunc.accept(diff);
-            // 因为新创建的对象没有id, 所以要等执行保存后再创建快照
-            if (snapshot == null) {
-                this.setEntityId(diff.getEntityId());
-                snapshot();
-            }
+        if (save(saveFunc)) {
+            snapshot();
         }
     }
 
-    private void save(Consumer<T> saveFunc) {
-        T diff = diff();
-        // 执行具体的修改方法
-        saveFunc.accept(diff);
+    public boolean save(Consumer<T> saveFunc) {
+        if (isChange()) {
+            T diff = diff();
+            // 执行具体的修改方法
+            saveFunc.accept(diff);
+            // 维持id的值
+            if (diff.getEntityId() != null) {
+                this.setEntityId(diff.getEntityId());
+            }
+            return true;
+        }
+        return false;
     }
-
 
     public int version() {
         return this._version;
