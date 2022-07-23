@@ -1,4 +1,4 @@
-package com.khetao.tome.merchant.app;
+package com.khetao.tome.marketing.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

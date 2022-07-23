@@ -1,4 +1,4 @@
-package com.khetao.tome.merchant.type;
+package com.khetao.tome.marketing.type;
 
 /**
  * @author chenqinhao 2022/7/20

@@ -1,6 +1,6 @@
-package com.khetao.tome.merchant.model;
+package com.khetao.tome.marketing.model;
 
-import com.khetao.tome.merchant.type.ShopStatus;
+import com.khetao.tome.marketing.type.ShopStatus;
 import lombok.Data;
 
 /**
