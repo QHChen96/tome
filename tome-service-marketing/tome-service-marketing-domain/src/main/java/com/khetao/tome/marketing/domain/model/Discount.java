@@ -3,10 +3,8 @@ package com.khetao.tome.marketing.domain.model;
 import com.khetao.tome.ddd.EntitySnapshot;
 import com.khetao.tome.marketing.domain.repo.DiscountRepo;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 
-import javax.inject.Named;
 import java.time.LocalDateTime;
 import java.util.Collection;
 
@@ -28,7 +26,6 @@ public class Discount extends EntitySnapshot<Discount> {
      */
     private DiscountRepo discountRepo;
 
-    // TODO 考虑是否需要创建一个快照, 用来做更新操作
     public boolean hasRepo() {
         return discountRepo != null;
     }

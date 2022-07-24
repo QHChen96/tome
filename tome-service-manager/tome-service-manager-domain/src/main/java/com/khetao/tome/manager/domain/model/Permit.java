@@ -1,4 +1,4 @@
-package com.khetao.tome.manager.domain;
+package com.khetao.tome.manager.domain.model;
 
 import lombok.Data;
 

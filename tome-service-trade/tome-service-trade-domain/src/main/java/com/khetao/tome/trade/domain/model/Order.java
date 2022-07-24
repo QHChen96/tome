@@ -136,4 +136,8 @@ public class Order {
      * 是否包含税费
      */
     private boolean taxIncluded;
+    /**
+     * 支付方式
+     */
+    private Integer payType;
 }
