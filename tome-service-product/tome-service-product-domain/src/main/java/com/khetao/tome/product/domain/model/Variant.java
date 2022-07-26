@@ -1,11 +1,11 @@
 package com.khetao.tome.product.domain.model;
 
-import com.khetao.tome.dto.Money;
-import com.khetao.tome.dto.Volume;
-import com.khetao.tome.dto.Weight;
+import com.khetao.tome.ddd.valobj.Money;
+import com.khetao.tome.ddd.valobj.Stock;
+import com.khetao.tome.ddd.valobj.Volume;
+import com.khetao.tome.ddd.valobj.Weight;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -27,8 +27,12 @@ public class Variant {
      * 价格
      */
     private Money price;
+    /**
+     * 市场价
+     */
+    private Money marketPrice;
 
-    private String sku;
+    private String skucode;
     /**
      * 条形码
      */
@@ -41,4 +45,8 @@ public class Variant {
      * 体积
      */
     private Volume volume;
+    /**
+     * 可售库存
+     */
+    private Stock stock;
 }

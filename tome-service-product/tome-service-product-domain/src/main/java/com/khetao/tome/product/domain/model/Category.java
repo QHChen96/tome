@@ -1,6 +1,6 @@
 package com.khetao.tome.product.domain.model;
 
-import com.khetao.tome.dto.Image;
+import com.khetao.tome.ddd.valobj.Image;
 import lombok.Data;
 
 import java.util.List;
