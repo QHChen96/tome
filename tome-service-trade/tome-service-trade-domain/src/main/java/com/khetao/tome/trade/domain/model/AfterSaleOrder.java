@@ -13,6 +13,14 @@ public class AfterSaleOrder {
     private Integer returnType;
     private Integer reasonId;
     private String reason;
-    private Integer status;
+
     private Long orderId;
+    /**
+     * 退货状态
+     */
+    private Integer status;
+    /**
+     * 退款类型
+     */
+    private Integer refundType;
 }

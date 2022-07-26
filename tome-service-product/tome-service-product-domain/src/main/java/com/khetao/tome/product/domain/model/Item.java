@@ -49,9 +49,17 @@ public class Item {
      */
     private Long categoryId;
     /**
+     * 分类名称
+     */
+    private String categoryName;
+    /**
      * 品牌id
      */
     private Long brandId;
+    /**
+     * 品牌名称
+     */
+    private String brandName;
     /**
      * 商品主图
      */
@@ -60,6 +68,20 @@ public class Item {
      * 视频视频
      */
     private Video videoUrl;
-
-
+    /**
+     * 货号
+     */
+    private String articleNumber;
+    /**
+     * 备注
+     */
+    private String remark;
+    /**
+     * 审核状态
+     */
+    private Integer status;
+    /**
+     * 预售发货时间间隔
+     */
+    private Integer preSaleDeliverType;
 }

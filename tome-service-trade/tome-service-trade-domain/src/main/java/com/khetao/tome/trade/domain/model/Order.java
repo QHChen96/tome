@@ -1,5 +1,6 @@
 package com.khetao.tome.trade.domain.model;
 
+import com.khetao.tome.ddd.valobj.Address;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -137,7 +138,32 @@ public class Order {
      */
     private boolean taxIncluded;
     /**
-     * 支付方式
+     * 支付方式: 货到付款、在线支付
      */
     private Integer payType;
+    /**
+     * 订单类型
+     */
+    private Integer orderType;
+    /**
+     * 订单状态
+     */
+    private Integer status;
+    /**
+     * 地址
+     */
+    private Address address;
+    /**
+     * 详细地址
+     */
+    private String addressDetail;
+    /**
+     * 手机号码
+     */
+    private String phoneNumber;
+    /**
+     * 用户名称
+     */
+    private String userName;
+
 }

@@ -17,9 +17,21 @@ import java.util.Collection;
 public class Discount extends EntitySnapshot<Discount> {
     private Long discountId;
     private String discountName;
+    /**
+     * 开始时间
+     */
     private LocalDateTime startTime;
+    /**
+     * 结束时间
+     */
     private LocalDateTime endTime;
+    /**
+     * 创建时间
+     */
     private LocalDateTime gmtCreate;
+    /**
+     * 修改时间
+     */
     private LocalDateTime gmtModify;
     /**
      * 这个需要通过工厂创建出来才有

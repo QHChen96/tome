@@ -20,7 +20,6 @@ public class DiscountItem {
      * 库存限制
      */
     private Integer promotionStock;
-
     /**
      * 数量限制, 如果不限制数量则输入0
      */

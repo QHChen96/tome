@@ -1,10 +1,12 @@
 package com.khetao.tome.dto;
 
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.function.Consumer;
 
+@Data
 public class CodeMessageResponse extends DTO {
 
     private static final long serialVersionUID = 1L;
@@ -19,6 +21,11 @@ public class CodeMessageResponse extends DTO {
     private Integer code;
 
     private String message;
+
+    /**
+     * 链路追踪
+     */
+    private String traceId;
 
     public CodeMessageResponse() {
         setCode(CODE_SUCCESS);
@@ -69,20 +76,4 @@ public class CodeMessageResponse extends DTO {
         return send(CODE_SUCCESS, MSG_SUCCESS);
     }
 
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 }

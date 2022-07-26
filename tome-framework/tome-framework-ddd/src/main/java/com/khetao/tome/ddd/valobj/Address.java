@@ -29,4 +29,9 @@ public class Address {
      */
     private Long areaCode;
     private String areaName;
+    /**
+     * 街道
+     */
+    private Long townId;
+    private String townName;
 }

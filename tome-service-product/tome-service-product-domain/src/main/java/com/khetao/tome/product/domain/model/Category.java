@@ -44,4 +44,8 @@ public class Category {
      * 类目路径
      */
     private List<String> paths;
+    /**
+     * 状态
+     */
+    private Integer status;
 }
