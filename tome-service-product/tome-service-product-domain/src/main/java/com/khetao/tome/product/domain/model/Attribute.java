@@ -1,7 +1,7 @@
-package com.khetao.tome.product.model;
+package com.khetao.tome.product.domain.model;
 
-import com.khetao.tome.product.type.AttributeInputType;
-import com.khetao.tome.product.type.AttributeType;
+import com.khetao.tome.product.domain.type.AttributeInputType;
+import com.khetao.tome.product.domain.type.AttributeType;
 import lombok.Data;
 
 import java.util.List;

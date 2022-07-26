@@ -1,4 +1,4 @@
-package com.khetao.tome.product.valobj;
+package com.khetao.tome.product.domain.valobj;
 
 import lombok.Data;
 

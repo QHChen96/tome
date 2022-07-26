@@ -1,4 +1,4 @@
-package com.khetao.tome.product.type;
+package com.khetao.tome.product.domain.type;
 
 /**
  * 计量单位

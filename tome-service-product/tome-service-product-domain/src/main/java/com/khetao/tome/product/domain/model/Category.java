@@ -1,4 +1,4 @@
-package com.khetao.tome.product.model;
+package com.khetao.tome.product.domain.model;
 
 import com.khetao.tome.dto.Image;
 import lombok.Data;
