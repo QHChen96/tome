@@ -15,25 +15,17 @@
     <description>${project.artifactId}</description>
 
     <modules>
-        <module>tome-framework-coverage</module>
+        <module>tome-framework-core</module>
         <module>tome-framework-exception</module>
         <module>tome-framework-dto</module>
         <module>tome-framework-toolkit</module>
         <module>tome-framework-ddd</module>
         <module>tome-framework-tdd</module>
-        <module>tome-framework-security</module>
-        <module>tome-framework-cache-starter</module>
-        <module>tome-framework-catchlog-starter</module>
-        <module>tome-framework-extension-starter</module>
-        <module>tome-framework-metrics-starter</module>
-        <module>tome-framework-web-starter</module>
-        <module>tome-framework-openfeign</module>
-        <module>tome-framework-environment</module>
         <module>tome-framework-threadpool</module>
         <module>tome-framework-eventbus</module>
-        <module>tome-framework-tracing</module>
         <module>tome-framework-javaagent</module>
-        <module>tome-framework-core</module>
+        <module>tome-framework-mybatis</module>
+        <module>tome-framework-job</module>
     </modules>
 
 </project>

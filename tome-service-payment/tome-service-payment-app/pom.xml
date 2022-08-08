@@ -54,7 +54,7 @@
         </dependency>
         <dependency>
             <groupId>com.khetao.tome</groupId>
-            <artifactId>tome-service-payment</artifactId>
+            <artifactId>tome-service-payment-facade</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

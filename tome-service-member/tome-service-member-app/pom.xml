@@ -50,11 +50,15 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.khetao.tome</groupId>
             <artifactId>tome-service-member-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.khetao.tome</groupId>
+            <artifactId>tome-starter-loadbalancer</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

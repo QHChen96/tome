@@ -13,10 +13,7 @@ import org.springframework.web.client.RestTemplate;
  * @email qhchen96@gmail.com
  */
 @EnableDiscoveryClient
-@SpringBootApplication
-@ComponentScan(basePackages = {
-    "com.khetao.tome",
-})
+@SpringBootApplication(proxyBeanMethods = false)
 public class MemberProviderApplication {
 
     @Bean

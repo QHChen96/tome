@@ -54,7 +54,7 @@
         </dependency>
         <dependency>
             <groupId>com.khetao.tome</groupId>
-            <artifactId>tome-service-marketing</artifactId>
+            <artifactId>tome-service-marketing-facade</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

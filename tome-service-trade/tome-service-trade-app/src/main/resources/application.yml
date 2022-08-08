@@ -7,6 +7,11 @@ spring:
   main:
     allow-bean-definition-overriding: true
   cloud:
+    discovery:
+      reactive:
+        enabled: true
+      retry:
+        enabled: true
     loadbalancer:
       ribbon:
         enabled: false
@@ -18,7 +23,6 @@ spring:
       username: ${NACOS_USERNAME:nacos}
       password: ${NACOS_PASSWORD:nacos}
       server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
-
 management:
   endpoints:
     web:

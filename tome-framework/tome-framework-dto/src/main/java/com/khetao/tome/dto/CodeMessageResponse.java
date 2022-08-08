@@ -28,13 +28,13 @@ public class CodeMessageResponse extends DTO {
     private String traceId;
 
     public CodeMessageResponse() {
-        setCode(CODE_SUCCESS);
-        setMessage(MSG_SUCCESS);
+        this.code = CODE_SUCCESS;
+        this.message = MSG_SUCCESS;
     }
 
     public CodeMessageResponse(Integer code, String message) {
-        setCode(code);
-        setMessage(message);
+        this.code = code;
+        this.message = message;
     }
 
     public static CodeMessageResponse op(Runnable executor) {

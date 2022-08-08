@@ -30,10 +30,12 @@
         <module>tome-service-trade</module>
         <module>tome-service-marketing</module>
         <module>tome-service-member</module>
+        <module>tome-service-manager</module>
         <module>tome-service-payment</module>
         <module>tome-service-merchant</module>
         <module>tome-service-product</module>
         <module>tome-service-shoppingcart</module>
+        <module>tome-starter</module>
     </modules>
 
     <properties>
@@ -63,7 +65,21 @@
         <redisson-spring-boot-starter.version>3.17.3</redisson-spring-boot-starter.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <shardingsphere.version>5.1.2</shardingsphere.version>
+        <lombok.version>1.18.24</lombok.version>
+        <disruptor.version>3.4.0</disruptor.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -141,6 +157,26 @@
                 <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
                 <version>${shardingsphere.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${disruptor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -171,18 +207,22 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
-                <inherited>true</inherited>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <parameters>true</parameters>
                     <annotationProcessorPaths>
-                        <path>
+                        <annotationProcessorPath>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
                             <version>${mapstruct.version}</version>
-                        </path>
+                        </annotationProcessorPath>
+                        <annotationProcessorPath>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
@@ -225,4 +265,16 @@
 
     </build>
 
+    <repositories>
+        <repository>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/spring</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
